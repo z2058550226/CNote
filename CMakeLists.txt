@@ -3,4 +3,4 @@ project(CNote C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CNote chapter3_tool/bermuda.c chapter3_tool/order_pizza.c)
+add_executable(CNote chapter4_multiple_source/test1.c chapter4_multiple_source/test2.c)

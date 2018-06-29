@@ -3,4 +3,4 @@ project(CNote C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CNote chapter2_5_string/StringTest.c)
+add_executable(CNote chapter3_tool/bermuda.c)

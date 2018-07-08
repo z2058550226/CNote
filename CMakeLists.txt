@@ -3,4 +3,8 @@ project(CNote C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CNote chapter4_multiple_source/test1.c chapter4_multiple_source/test2.c)
+set(APP_NAME CNote)
+
+add_executable(${APP_NAME} chapter6_data_struct/linked_list.c)
+
+add_library(MyLib lib/text_lib.c)

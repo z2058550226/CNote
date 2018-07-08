@@ -5,10 +5,6 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    fun();
-    return 0;
-}
 
-float fun() {
-    return 1.0f;
+    return 0;
 }

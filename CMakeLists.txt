@@ -3,4 +3,4 @@ project(CNote C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CNote chapter6_data_struct/tour.c)
+add_executable(CNote chapter7_adv_function/find2.c)

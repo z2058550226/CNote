@@ -1,0 +1,15 @@
+Name: aIsland
+
+ open: 09:00-17:00
+Name: b
+
+ open: 09:00-17:00
+Name: c
+ open: 09:00-17:00
+Name: 0vr
+ open: êr-17:00
+Name: 0vr
+ open: 09:00-17:00
+Name: Pr
+ open: 09:00-17:00
+the start island is NULL? 0

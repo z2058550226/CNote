@@ -3,4 +3,4 @@ project(CNote C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CNote chapter7_adv_function/send_dear_john2.c)
+add_executable(CNote chapter8_shared_code/test_code.c)

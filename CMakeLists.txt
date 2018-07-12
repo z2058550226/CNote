@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(CNote C)
-#指定静态链接库的头文件位置，相当于gcc的-i选项
+#指定静态链接库的头文件位置，相当于gcc的-I选项
 include_directories(chapter8_shared_code/mylib)
 #指定.a文件所在目录，相当于gcc的-L选项
 link_directories(chapter8_shared_code/mylib)
@@ -11,5 +11,6 @@ add_subdirectory(chapter8_shared_code/mylib)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(CNote chapter8_shared_code/test_code.c)
-#将静态链接库与当前项目进行链接，否则编译器找不到(这里的.a文件是使用mylib目录下的CMake指令编译出来的，自己ar的会报错不知道为什么)
+#将静态链接库与当前项目进行链接，否则编译器找不到(这里的.a文件是使用mylib目录下的CMake指令编译出来的，自己ar的会报错不知道为什么，但后来ar的又好使了)
+#这里相当于gcc的-l选项
 target_link_libraries(CNote libhfsecurity.a)

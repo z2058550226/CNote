@@ -1,0 +1,12 @@
+﻿1、编译目标文件，并包含当前目录下的头文件
+gcc -c hfcal.c -I. -o hfcal.o
+2、编译测试main文件
+gcc -c elliptical.c -o elliptical.o
+3、打包静态链接库
+ar -rcs libhfcal.a hfcal.o
+4、查看静态链接库（检查一下，非必须）
+nm libhfcal.a
+5、链接静态库并生成可执行文件
+gcc elliptical.o -L. -lhfcal -o elliptical
+6、执行可执行文件
+elliptical

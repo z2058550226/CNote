@@ -12,7 +12,7 @@ add_subdirectory(chapter8_shared_code/cal)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(CNote chapter10_process_interact/alarm_test.c)
+add_executable(CNote chapter10_process_interact/math_master.c)
 #将静态链接库与当前项目进行链接，否则编译器找不到(这里的.a文件是使用mylib目录下的CMake指令编译出来的，自己ar的会报错不知道为什么，但后来ar的又好使了)
 #这里相当于gcc的-l选项
 target_link_libraries(CNote libhfsecurity.a)
